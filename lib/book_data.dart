@@ -1,5 +1,30 @@
 import 'book_model.dart';
 
+
+
+List<Book> _recentBooks = [
+  Book(
+      name: "Daughter of Man",
+      author: "Afia Atakora",
+      coverImage: "assets/images/ad4.jpeg",
+      rating: 4.0),
+  Book(
+      name: "The Hobbit",
+      author: "J.R.R.TOLKIEN",
+      coverImage: "assets/images/hobbit.jpg",
+      rating: 4.0),
+  Book(
+      name: "Sherlock Holmes",
+      author: "Sir Arthur conan Doyale",
+      coverImage: "assets/images/sherlock.jpg",
+      rating: 4.0),
+  Book(
+      name: "Sherlock Holmes",
+      author: "Sir Arthur conan Doyale",
+      coverImage: "assets/images/sherlock2.jpg",
+      rating: 4.0),
+];
+
 List<Book> _allBooks = [
 
   Book(
@@ -24,34 +49,8 @@ List<Book> _allBooks = [
       author: "Afia Atakora",
       coverImage: "assets/images/ad8.jpg",
       rating: 4.0),
-
-
-
-
 ];
 
-List<Book> _recentBooks = [
-  Book(
-      name: "Daughter of Man",
-      author: "Afia Atakora",
-      coverImage: "assets/images/ad4.jpeg",
-      rating: 4.0),
-  Book(
-      name: "The Hobbit",
-      author: "J.R.R.TOLKIEN",
-      coverImage: "assets/images/hobbit.jpg",
-      rating: 4.0),
-  Book(
-      name: "Sherlock Holmes",
-      author: "Sir Arthur conan Doyale",
-      coverImage: "assets/images/sherlock.jpg",
-      rating: 4.0),
-  Book(
-      name: "Sherlock Holmes",
-      author: "Sir Arthur conan Doyale",
-      coverImage: "assets/images/sherlock2.jpg",
-      rating: 4.0),
-];
 
 List<Book> _upcomingBooks = [
 
@@ -92,12 +91,14 @@ List<Book> _upcomingBooks = [
 
 ];
 
-List<Book> get allBooks {
-  return [..._allBooks];
-}
 
 List<Book> get recentBooks {
   return [..._recentBooks];
+}
+
+
+List<Book> get allBooks {
+  return [..._allBooks];
 }
 
 List<Book> get upcomingBooks {
